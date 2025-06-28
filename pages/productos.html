@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Pagina de hamburguesas- Productos</title>
+</head>
+<body id="body">
+    <header class="header">
+        <nav class="top">
+            <h1>BALSAMIC-BURGUERS</h1>
+            <a href="../index.html">Home</a>
+            <a href="#">Productos</a>
+            <a href="../pages/contacto.html">Contacto</a>
+            <a href="../pages/carrito.html">Carrito</a>
+            <hr>
+        </nav>
+    </header>
+
+    <section class="medio">
+        <div class="encabezadoProductos"> 
+            Nuestros productos </p>
+        </div>
+        <div class= "contenedorProducto">
+                <aside class= "carta">
+                    <h4>TU HAMBURGUESA</h4>
+                    <hr>
+                    <form action="#">
+                        <div class="radios1">
+                            <h3>Rellenos</h3>
+                            <hr>
+                            <label for="vaca">
+                                <input id="vaca" type="radio"name="veggieocarne"checked value="vaca">
+                                Blend de carne </label><br>
+                            <label for="veggie">
+                                <input id="veggie" type="radio"name="veggieocarne" value="veggie">
+                                Veggie </label><br>
+                            <hr>
+                        </div>
+                        <div class="radios2">
+                            <h3>Tamaño</h3>
+                            <hr>
+                            <label for="simple">
+                                <input id="simple" type="radio"name="carne"checked value="simple">
+                            Simple </label><br>
+                            <label for="doble">
+                                <input id="doble" type="radio"name="carne" value="doble">
+                            Doble </label><br>
+                            <label for="triple">
+                                <input id="triple" type="radio"name="carne" value="triple">
+                            Triple </label><br>
+                            <hr>
+                        </div>
+                        <div class="checks">
+                            <h3>Personalizala a tu gusto!</h3>
+                            <label for="muzzarella">
+                                <input id="muzzarella" type="checkbox"name="ingredientes"value="muzzarella"> Muzzarella <br> 
+                            </label>
+                            <label for="cheddar">
+                                <input id="cheddar" type="checkbox"name="ingredientes"value="cheddar"> Cheddar <br> 
+                            </label>
+                            <label for="tomate">
+                                <input id="tomate" type="checkbox"name="ingredientes"value="tomate"> Tomate <br> 
+                            </label>
+                            <label for="lechuga">
+                                <input id="lechuga" type="checkbox"name="ingredientes"value="lechuga"> Lechuga <br> 
+                            </label>
+                            <label for="mayonesa">
+                                <input id="mayonesa" type="checkbox"name="ingredientes"value="mayonesa"> Mayonesa <br> 
+                            </label>
+                            <label for="salsaDeLaCasa">
+                                <input id="salsaDeLaCasa" type="checkbox"name="ingredientes"value="salsaDeLaCasa"> Salsa De La Casa <br> 
+                            </label>
+                            <label for="bacon">
+                                <input id="bacon" type="checkbox"name="ingredientes"value="bacon"> Bacon <br> 
+                            </label>
+                            <label for="huevo">
+                                <input id="huevo" type="checkbox"name="ingredientes"value="huevo"> Huevo <br> 
+                            </label>
+                            <label for="rockefort">
+                                <input id="rockefort" type="checkbox"name="ingredientes"value="rockefort"> Rockefort <br> 
+                            </label>
+                            <hr>
+                        </div>
+                        <div class="boton"> 
+                            <button type="submit"> Buscar</button>
+                        </div>   
+                    </form>
+                </aside>
+            <main class="seleccionHambur">
+                <div class="imagenesDeProductos">
+                    <div class="hamburguesa1">
+                        <img class="fotoHambur" src="https://www.carniceriademadrid.es/wp-content/uploads/2022/09/smash-burger-que-es.jpg" alt="hamburguesa1"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </p> 
+                        <h5>Hamburguesa de un blend de carnes, con la mejor Muzzarella, doble Cheddar,Panceta y Rockefort</h5><br>
+                        <h6>COMPLETISIMAA!!</h6>
+
+                        <form action="#">
+                            <label for="cantidad">Cantidad</label>
+                            <select name="cuantas" id="cantidad">
+                                <option selected="0">Selecciona</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="hamburguesa2">
+                        <img class="fotoHambur"src="https://argentinaburger.com/wp-content/uploads/2022/10/front-view-burger-on-stand-compressed-1024x682.jpg" 
+                            alt="hamburguesa2"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </p> 
+                        <h5>Hamburguesa de un blend de carnes, con la mejor Muzzarella, rockefort, con muchisimo queso!</h5>
+                        <h6>A QUIEN NO LE GUSTA EL QUESO?</h6>
+                        <form action="#">
+                            <label for="cantidad">Cantidad</label>
+                            <select name="cuantas" id="cantidad">
+                                <option selected="0">Selecciona</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="hamburguesa3">
+                        <img class="fotoHambur"src="https://bsstatic2.mrjack.es/wp-content/uploads/2020/09/hamburguesa-bbq-cab.jpg" 
+                            alt="hamburguesa3"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </p>
+                        <h5>Hamburguesa de un blend de carnes, con Panceta y rockefort, Mayo, lechuga y tomate</h5>
+                        <h6>Simple pero increible</h6>
+                        <form action="#">
+                            <label for="cantidad">Cantidad</label>
+                            <select name="cuantas" id="cantidad">
+                                <option selected="0">Selecciona</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="hamburguesa4">
+                        <img class="fotoHambur"src="https://www.circuitogastronomico.com/wp-content/uploads/2024/09/burger-inc.png" 
+                            alt="hamburguesa4"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </p> 
+                        <h5>Hamburguesa de un blend de carnes, con el mejor queso Cheddar y Rockefort, y no nos olvidemos de la exquisita salsa de la casa!!</h5>
+                        <form action="#">
+                            <label for="cantidad">Cantidad</label>
+                            <select name="cuantas" id="cantidad">
+                                <option selected="0">Selecciona</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="hamburguesa5">
+                        <img class="fotoHambur"src="https://assets.elgourmet.com/wp-content/uploads/2023/03/brang_FomkpP28RHyLEDticgjKVhqG1CwSvI-1024x683.png.webp" 
+                            alt="hamburguesa5"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </p> 
+                        <h5>hamburguesa de un blend de carnes, con mucho huevo, mayo, lechuga y tomate</h5>
+                        <form action="#">
+                            <label for="cantidad">Cantidad</label>
+                            <select name="cuantas" id="cantidad">
+                                <option selected="0">Selecciona</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <section class="enviar">
+                    <a href="../pages/carrito.html"><button type="submit"> <h1> Pedir</h1></button></a>
+                </section>
+            </main>
+        </div>
+    </section>
+</body>
+<footer>
+    <hr>
+    °2025 Balsamic-burguers SRL all right reserved
+    <hr>
+</footer>    
+</html>
