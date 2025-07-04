@@ -37,25 +37,22 @@ hr {
     text-align: center;
     text-decoration: solid;
 }
-
 .top h1{
         text-decoration: underline;
         margin: 10px;
         font-size: 3em;
 }
-
 .top a {
         color: white;
         text-decoration: none;
         margin: 0 15px;
         transition: color 0.3s;
 }
-
 .top a:hover {
     color: #FFD700; /* Remarcado Dorado en el link */
 }
 
-.medioHome { /* Sección media de home*/
+.medioHome { /* Sección media de index*/
     background-color: white;
     padding: 20px;
     margin: 20px auto;
@@ -63,7 +60,6 @@ hr {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .audio{
     text-align: center;
 }
@@ -76,21 +72,12 @@ hr {
     color: #8B0000;
 }
 
-.contenedorProducto{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    width: 98%;
-    margin: 0 auto;
-}
-
 .carta {
     display: flex;
     margin-bottom: 30px;
     flex-direction: column;
-    width: 50%;
+    width: 90%;
 }
-
 .carta h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -162,9 +149,7 @@ button:hover {
     border-radius: 10px;
 }
 
-
-
-/* Sección enviar */
+/*  enviar */
 .enviar {
     text-align: center;
     margin: 30px 0;
@@ -174,8 +159,103 @@ button:hover {
     padding: 15px 15px;
     font-size: 1.2em;
 }
-
 .selecccionHambur{
 display: flex;
+}
 
+.bodyProducto {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.contenedorProducto {
+    
+    display: grid;
+    flex-direction: unset;
+    justify-content: unset;
+    grid-template-columns: 400px 1fr;
+    width: 100%;
+    margin: 10 auto;
+    padding: 10px;
+    gap: 0px
+}
+
+
+.imagenesDeProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.hamburguesa1, .hamburguesa2, .hamburguesa3, 
+.hamburguesa4, .hamburguesa5 {
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .contenedorProducto {
+        grid-template-columns: 1fr;
+    }
+    
+    .carta {
+        width: 100%;
+    }
+
+    .imagenesDeProductos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ESTILOS  PÁGINA DE CONTACTO */
+
+/* Contenedor principal */
+.medioContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Sección de información de contacto */
+.contact-info {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h1 {
+    color: #8B0000;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #8B0000;
+    color: white;
+    transform: translateX(5px);
 }
